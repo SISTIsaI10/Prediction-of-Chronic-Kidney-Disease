@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.img {
+    width: 150px;
+    border-radius: 15px;
+}
+
+.kidney-back {
+    background-image: url("https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61806.jpg?w=1380&t=st=1706890935~exp=1706891535~hmac=814e81b8df843fab1a1be45cceec1771a9e62b385874ff8bdd14b7b739dc03af");
+    height: 100vh;
+    background-size: cover;
+}
+
+.rad {
+    border-radius: 20px;
+}
+
+.special {
+    font-weight: 1000;
+
+}
+
+.button {
+    background-color: transparent;
+    color: brown;
+    width: 200px;
+    border-radius: 20px;
+
+
+}
+
+.symp {
+    background-color: #ffec8a;
+}
+
+.kid {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.img2 {
+
+    border-radius: 15px;
+}
+
+.img3 {
+    width: 300px;
+}
+
+.card1 {
+    background-color: skyblue;
+    border-radius: 15px;
+}
+
+.delivery-and-payment-section {
+    background-color: white;
+}
+
+.delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+
+    <div >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://img.freepik.com/free-vector/realist-human-kidney-cross-section-scientific-background-vector-illustration_587448-977.jpg?w=2000&t=st=1707022160~exp=1707022760~hmac=df8ad7bd40bf0cf87c8d04a765251aec31a45a8fa48c0ac389f40e0f63ec1982" class="img" /></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sectionSymptoms">Symptoms and Diagnosis</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sectionTreatment">Treatment Options</a>
+                        </li>
+                    <div hidden>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sectionDelivery">Delivery and Payment</a>
+                        </li>
+                    </div>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="predict.html" target="_blank">Predict</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <div class="kidney-back d-flex flex-column justify-content-center p-3">
+
+            <div class="contianer">
+                <div class="row">
+
+                    <div class="col-6 mt-5 pt-5">
+
+                        <h1> Chronic kidney disease</h1>
+                        <p> CKD is a progressive condition that affects the kidneys' ability to function properly, leading to a buildup of waste in the body. Early detection and proactive management are key to living a healthier life with CKD.</p>
+
+                        <div class="mt-2 ">
+                            <a href="https://www.indiarenalfoundation.org/">
+                                <button class="ml-3 mb-2 button p-2"> Get the Donar</button></a>
+                            <a href="https://healthunlocked.com/nkf-dialysis/posts/150494721/kidney-equity-for-all?utm_campaign=nkf-dialysis&utm_medium=syndicated&utm_source=www.kidney.org&utm_term=posts_widget_v1" target="_blank"> <button class="ml-3 mb-2 button p-2"> Join the community</button> </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 mb-5 pt-5  mt-5">
+                        <img src="https://img.freepik.com/free-vector/kidney-realistic-organs-anatomy-poster_603843-3901.jpg?w=1480&t=st=1706891521~exp=1706892121~hmac=7711da3fcfaf351da4b97f45acd2eff0e3bff6a03af3dd234832e2e7601b583c" class="w-100 img" />
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="sectionSymptoms" class="symp p-4 mb-3 ">
+            <h1> Symptoms and Diagnosis</h1>
+            <p> How to recognise chronic kidney disease early</p>
+
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class=" col-12  col-md-6 col-xl-4 p-4  mb-3">
+                        <div class="card1 p-3">
+                            <img src="https://img.freepik.com/free-photo/top-view-tensiometer-checking-blood-pressure_23-2150456089.jpg?w=1800&t=st=1706892951~exp=1706893551~hmac=75593b2cefac8211ec07c4cc11dbb089eff99b5cffbb2b78f14d0611369b8cf2" class="w-100 mb-1" />
+                            <h3> High Blood pressure</h3>
+                            <p>Chronic high blood pressure puts strain on the small blood vessels in the kidneys, leading to gradual damage. Over time, this damage can result in CKD..</p>
+                        </div>
+                    </div>
+
+                    <div class=" col-12  col-md-6 col-xl-4 p-4 mb-3">
+                        <div class="card1 p-3">
+                            <img src="https://img.freepik.com/free-photo/hand-holding-blood-glucose-meter-measuring-blood-sugar-background-is-stethoscope-chart-file_1387-942.jpg?w=1800&t=st=1706893744~exp=1706894344~hmac=26d6525ac5480ead3f7c6396c50be2eaa43aaf6c13da792f93886c18a1b27033" class="w-100 mb-1" />
+                            <h3> Diabetes</h3>
+                            <p>Uncontrolled diabetes is a leading cause of CKD. Elevated blood sugar levels over time can damage the blood vessels in the kidneys, impacting their ability to function properly..</p>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-12  col-md-6 col-xl-4 p-4 mb-3">
+                        <div class="card1 p-3">
+                            <img src="https://img.freepik.com/free-vector/cute-characters-kidneys-human-internal-organs-dialysis-filter-function-vector-cartoon-medical-illustration-renal-system-nephrology-part-body-anatomy_107791-11208.jpg?w=2000&t=st=1706894339~exp=1706894939~hmac=32174a65223f845020f53bcfffce1cc9b4cc5ff27645fd68523b9528f0324285" class="w-100 mb-1" />
+                            <h3>Glomerulonephritis</h3>
+                            <p>This term refers to inflammation of the kidney's filtering units (glomeruli). Infections, autoimmune diseases, or other conditions can cause glomerulonephritis, contributing to the development of CKD.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="sectionTreatment" class="mt-3">
+            <h1>Treatment Options</h1>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/doctor-give-you-medicines_1150-13843.jpg?w=1800&t=st=1706894588~exp=1706895188~hmac=b48b62dad3c28dd3f002984378889fbf3b9f85d66ea3f07800beb5fcd9f30abd" class="w-100" />
+                            <p> Medications</p>
+                            <a href="https://www.kidneyfund.org/treatments/medicines-manage-kidney-disease" class="menu-item-link" target="_blank">
+                                View medicines
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/healthy-unhealthy-food_23-2148125119.jpg?w=1800&t=st=1706894871~exp=1706895471~hmac=c9adbc380d4dceebe6882d89f5ef149dd337b4b9aab3826de55b9e0b537cba23" class="w-100" />
+                            <p> Dietry changes</p>
+                            <a href="https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/eating-nutrition" class="menu-item-link" target="_blank">
+                                View Diet Plan
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/medical-ventilator-being-monitored-by-anaesthetist-surgeon-using-monitor-operating-room_657921-1091.jpg?w=1800&t=st=1706895121~exp=1706895721~hmac=bace03be0dc6ad22fdb179d8fd7a7938e50be6fa68a5e1010bd4157910255dfa" class="w-100" />
+                            <p> Dialysis</p>
+                            <a href="https://www.dpcedcenter.org/news-events/news/what-is-dialysis-and-chronic-kidney-disease/" class="menu-item-link" target="_blank">
+                                Kidney dialysis
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/doctors-doing-surgical-procedure-patient_23-2148962499.jpg?w=1800&t=st=1706895191~exp=1706895791~hmac=4bac917270be33f47b7338840e3aa2efd09fa77ad249d3e2bda9f353e5f18e67" class="w-100" />
+                            <p> Kidney Transplantation:</p>
+                            <a href="https://www.mayoclinic.org/tests-procedures/kidney-transplant/about/pac-20384777" class="menu-item-link" target="_blank">
+                                Kidney transplant
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/diet-concept-with-sporty-woman-kitchen_23-2148193189.jpg?w=1800&t=st=1706895374~exp=1706895974~hmac=71225f5c425b8802feacacb74da8a2af5aa971020a63398112ed3452e1c8ce2d" class="w-100" />
+                            <p> Managing Underlying Causes:</p>
+                            <a href="https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/managing" class="menu-item-link" target="_blank">
+                                View Diet Plan
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="shadow p-3 mb-3 rad">
+                            <img src="https://img.freepik.com/free-photo/young-energetic-cyclist-park_158595-2261.jpg?w=1800&t=st=1706895038~exp=1706895638~hmac=42ad3d7682f1c55d72012dbfaa8a1f62dc3b1dc67b5b5b0d0790d5c62a53ba86" class="w-100" />
+                            <p> Lifestyle Modifications:</p>
+                            <a href="https://www.kidney.org/atoz/content/about-chronic-kidney-disease" class="menu-item-link" target="_blank">
+                                View Lifestyle
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div hidden>
+        <div id="sectionDelivery" class="delivery-and-payment-section pt-5 pb-5 mt-5" id="deliveryPaymentSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="delivery-and-payment-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="delivery-and-payment-section-heading">
+                            Delivery and Payment
+                        </h1>
+                        <p class="delivery-and-payment-section-description">
+                            Enjoy hassle-free payment with the plenitude of payment options
+                            available for you. Get live tracking and locate your food on a
+                            live map. It's quite a sight to see your food arrive to your door.
+                            Plus, you get a 5% discount on every order every time you pay
+                            online.
+                        </p>
+                        <button class="custom-button">Order Now</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            Get <span class="special">45% </span> half on first checkup
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog mt-5">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                                                Gift Voucher
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="w-100" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <div hidden <img src="https://img.freepik.com/free-vector/realist-human-kidney-cross-section-scientific-background-vector-illustration_587448-977.jpg?w=2000&t=st=1707022160~exp=1707022760~hmac=df8ad7bd40bf0cf87c8d04a765251aec31a45a8fa48c0ac389f40e0f63ec1982" class="kid" /></div>
+                       <div hidden> <h1 class="footer-section-mail-id">kidneycare360.com</h1>
+                        <p class="footer-section-address">
+                            531001 Anakapalle, Vishakapatnam, India.
+                        </p> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

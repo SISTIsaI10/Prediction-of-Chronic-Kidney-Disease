@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidney Disease Predictor</title>
+  <style>
+    .kidney-disease-predictor {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .submit-button {
+  border: 1px solid #87ceeb;
+}
+
+    .input-field {
+      flex: 1;
+      padding: 10px;
+      margin: 5px; /* Add margin to create space between input fields */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .submit-button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .input-row {
+      display: flex;
+      flex-wrap: wrap; /* Allow input fields to wrap to the next row */
+    }
+
+    .input-grid {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<center><body>
+  <div class="kidney-disease-predictor">
+    <h1>KIDNEY DISEASE PREDICTION</h1>
+    
+    <form action="/" method="post">
+      <div class="input-grid">
+        <div class="input-row">
+          <input type="text" name="age" id="ageid" class="input-field" placeholder="age">
+          <input type="text" name="bp"  id="bpid" class="input-field" placeholder="blood_pressure">
+          <input type="number" name="sg" id="sgid" class="input-field" placeholder="specific_gravity">
+          <input type="text" name="al"  id="alid" class="input-field" placeholder="albumin">
+          <input type="text" name="su"  id="suid" class="input-field" placeholder="sugar">
+          <input type="text" name="rbc" id="rbcid" class="input-field" placeholder="red blood cells">
+        </div>
+        <div class="input-row">
+          <input type="text" name="pc"  id="pcid"  class="input-field" placeholder="pus cell">
+          <input type="text" name="pcc" id="pccid" class="input-field" placeholder="pus cell clumps">
+          <input type="text" name="ba"  id="baid" class="input-field" placeholder="bacteria">
+          <input type="text" name="bgr" id="bgrid" class="input-field" placeholder="blood glucose random">
+          <!-- Add 8 more input fields here -->
+          <input type="text" name="bu"  id="buid" class="input-field" placeholder="blood urea">
+          <input type="text" name="sc"  id="scid" class="input-field" placeholder="serum creatinine">
+          <input type="text" name="sod" id="sodid" class="input-field" placeholder="sodium">
+          <input type="number" name="pot" id="potid"  class="input-field" placeholder="potassium">
+          <input type="text" name="hemo"  id="hemoid" class="input-field" placeholder="hemoglobin">
+          <input type="number" name="pcv" id="pcvid"  class="input-field" placeholder="packed cell volume">
+          <input type="text" name="wc"  id="wcid" class="input-field" placeholder="white blood cell count">
+          <input type="text" name="rc"  id="rcid" class="input-field" placeholder="red blood cell count">
+          <input type="text" name="htn" id="htnid" class="input-field" placeholder="hypertension">
+          <input type="text" name="dm"  id="dmid"  class="input-field" placeholder="diabetes mellitus">
+          <input type="text" name="cad" id="cadid"  class="input-field" placeholder="coronory artery disease">
+          <input type="text" name="appet" id="appetid" class="input-field" placeholder="appetite">
+          <input type="text" name="pe"   id="peid" class="input-field" placeholder="pedal edema">
+          <input type="text" name="ane"  id="aneid"  class="input-field" placeholder="anemia">
+          
+        </div>
+      </div>
+      <center><input type="submit" value="Predict" id="submitbutton" style="background-color: #87ceeb;"></center>
+    </form>
+    
+    <br>
+    <font size="6"> 
+    <b></b>
+    
+  </div>
+  <div id="text-output">
+    <!-- Extracted text will be displayed here -->
+  </div>
+  <script src="script.js"></script>
+</body></center>
+</html>
